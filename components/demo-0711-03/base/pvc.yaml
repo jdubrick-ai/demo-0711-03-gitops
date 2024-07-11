@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: demo-0711-03
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: demo-0711-03 
+  name: demo-0711-03
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi

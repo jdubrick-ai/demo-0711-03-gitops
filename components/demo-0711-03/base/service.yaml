@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: demo-0711-03
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: demo-0711-03 
+  name: demo-0711-03
+spec:
+  ports:
+  - port: 8501
+    protocol: TCP
+    targetPort: 8501
+  selector:
+    app.kubernetes.io/instance: demo-0711-03 
